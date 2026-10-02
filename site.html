@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out of Line — Urban . Authentic . Effortless</title>
+    <link rel="stylesheet" href="site.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* --- СТИЛИ ДЛЯ ЗАКРЕПЛЕННОГО МЕНЮ --- */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            
+            /* Выравнивание */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            /* Отступы внутри панели */
+            padding: 10px 35px;
+            box-sizing: border-box;
+        }
+
+        /* Отступ для body, чтобы контент не заезжал под меню */
+        body {
+            padding-top: 95px; /* Подберите под высоту меню */
+            margin: 0;
+        }
+
+        /* Отступы для якорей при прокрутке */
+        #home, #about, #contacts {
+            scroll-margin-top: 100px;
+        }
+
+        /* Небольшая корректировка для мобильных */
+        @media (max-width: 768px) {
+            .top-bar {
+                padding: 10px 15px;
+                flex-direction: column;
+                gap: 10px;
+            }
+            body {
+                padding-top: 130px;
+            }
+            .nav-bar {
+                margin-top: 0;
+                gap: 20px;
+            }
+        }
+        /* ------------------------------------- */
+    </style>
+</head>
+<body>
+<div class="top-bar">
+    <div class="logo">Out of <span>Line</span></div>
+    <div class="nav-bar">
+        <a href="#home">Home</a>
+        <a href="#about">About us</a>
+        <a href="#contacts">Contacts</a>
+    </div>
+</div>
+<div class="nav-divider"></div>
+
+<div class="tagline">Urban . Authentic . Effortless</div>
+
+<div id="home" class="hero-banner">
+    <img src="https://static.dezeen.com/uploads/2018/07/moncler-x-kei-ninomiya-design_dezeen_2364_col_5-2.jpg" class="hero-image" alt="hero">
+</div>
+
+<!-- товары -->
+<div class="ready-title">READY-TO-WEAR</div>
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img"><img src="image/b875ba952d822b015ff391cd89f96b6e.jpg" alt="Oversized Comfort Shirt"></div>
+        <div class="product-info">
+            <div class="product-title">Oversized Comfort Shirt</div>
+            <div class="product-price">3.999 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/eba1d99a6351edeb8e087f2c6e808e1e.jpg" alt="Straight-Line Fit Pants"></div>
+        <div class="product-info">
+            <div class="product-title">Straight-Line Fit Pants</div>
+            <div class="product-price">4.500 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/0b8826e6013373382c4059f8e4383a14.jpg" alt="The Minimalist XS Tee"></div>
+        <div class="product-info">
+            <div class="product-title">The Minimalist XS Tee</div>
+            <div class="product-price">1.990 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/2f67fa254e80f3037c1fc5fff44220fc.jpg" alt="The Softness Skirt"></div>
+        <div class="product-info">
+            <div class="product-title">The Softness Skirt</div>
+            <div class="product-price">3.100 p</div>
+        </div>
+    </div>
+</div>
+
+<div class="ready-title">CLOTHES</div>
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img"><img src="image/0a2a0b2e239ca9b16012926c11123e74.jpg" alt="Street Rhythm Hoodie"></div>
+        <div class="product-info">
+            <div class="product-title">Street Rhythm Hoodie</div>
+            <div class="product-price">5.500p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/eb8c3f4cb373a6b47d9eb47fdfd513ad.jpg" alt="Neutral Longsleeve"></div>
+        <div class="product-info">
+            <div class="product-title">Neutral Longsleeve</div>
+            <div class="product-price">2.500 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/7fc69a65d6b089b07bd5bddf27945dfb.jpg" alt="Paris Morning Sweater"></div>
+        <div class="product-info">
+            <div class="product-title">Paris Morning Sweater</div>
+            <div class="product-price">2.670 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/3f1b24cb869ee26d3a90d1699f568d00.jpg" alt="Light Armor Jacket"></div>
+        <div class="product-info">
+            <div class="product-title">Light Armor Jacket</div>
+            <div class="product-price">7.400 p</div>
+        </div>
+    </div>
+</div>
+
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img"><img src="image/abf071c12d44cf92b9eb09216075caf3.jpg" alt="Relaxed Pants"></div>
+        <div class="product-info">
+            <div class="product-title">Relaxed Pants</div>
+            <div class="product-price">8.900 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/84dca1972f6a5fa0a7e18188a743bfc2.jpg" alt="Straight Shorts"></div>
+        <div class="product-info">
+            <div class="product-title">Straight Shorts</div>
+            <div class="product-price">4.000 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/00476d52ed1114976b839e31612bd01d.jpg" alt="Leopard Print Jeans"></div>
+        <div class="product-info">
+            <div class="product-title">Leopard Print Jeans</div>
+            <div class="product-price">7.100p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/ccbcb273e378a01bd0ea63decd84c14b.jpg" alt="Loose Shorts"></div>
+        <div class="product-info">
+            <div class="product-title">Loose Shorts</div>
+            <div class="product-price">2.670p</div>
+        </div>
+    </div>
+</div>
+
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-img"><img src="image/0c71ec04a3f6758f68fe33d148faf1cd.jpg" alt="Red on White"></div>
+        <div class="product-info">
+            <div class="product-title">Red on White</div>
+            <div class="product-price">1.999 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/c3435b629be42723b0f3ce849425bad4.jpg" alt="Balenciaga Vintage Effect Tee"></div>
+        <div class="product-info">
+            <div class="product-title">Balenciaga Vintage Effect Tee</div>
+            <div class="product-price">6.700 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/b875ba952d822b015ff391cd89f96b6e.jpg" alt="Graphic Tee (Black & Red)"></div>
+        <div class="product-info">
+            <div class="product-title">Graphic Tee (Black & Red)</div>
+            <div class="product-price">3.010 p</div>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-img"><img src="image/a611767546d48b147195eaaca88a2e79.jpg" alt="Boiled Tee with Graphic"></div>
+        <div class="product-info">
+            <div class="product-title">Boiled Tee with Graphic</div>
+            <div class="product-price">2.200 p</div>
+        </div>
+    </div>
+</div>
+
+<!--инфа о наас-->
+<div id="about"></div>
+<div class="ready-title1">ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOUT US ABOU</div>
+<div class="about-section"> 
+    <div class="about-image">
+        <img src="https://i.pinimg.com/1200x/f6/6f/3b/f66f3ba62399b9fb1e021f075f36a094.jpg" class="about-img" alt="about">
+    </div>
+    <div class="about-content">
+        <div class="about-subtitle">О БРЕНДЕ</div>
+        <div class="about-title">Out of Line</div>
+        <div class="about-divider"></div>
+        <div class="about-text">
+            Мы создаём одежду для тех, кто не боится быть собой. Без лишнего шума, без вычурных логотипов. 
+            Только качественные материалы, чёткий крой и атмосфера больших городов.
+        </div>
+        <div class="about-text">
+            Urban. Authentic. Effortless — это не просто слова. Это наш подход к моде. Простота, которая работает. 
+            Комфорт, который остаётся с тобой целый день.
+        </div>
+        <div class="about-signature">— Основано в Уфе, 2026</div>
+    </div>
+</div>
+
+<!--отзывы-->
+<div class="reviews-section">
+    <div class="reviews-title">REVIEWS</div>
+    <div class="reviews-grid">
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">А</div>
+                <span class="review-name">Артём</span>
+            </div>
+            <div class="review-stars">★★★★☆</div>
+            <div class="review-text">Куртка стильная, но я высокий (185), рукава коротковаты. Вернул без проблем, деньги быстро пришли.</div>
+            <div class="review-like">♥ 8</div>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">Е</div>
+                <span class="review-name">Екатерина</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">Юбка прикольная, фактура необычная. Носила уже пару раз, всё ок. С кедами вообще огонь.</div>
+            <div class="review-like">♥ 23</div>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">М</div>
+                <span class="review-name">Марина</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">Штаны огонь, удобные. С кедами зашли. Буду брать ещё. Качество супер, цена адекватная.</div>
+            <div class="review-like">♥ 31</div>
+        </div>
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-avatar">Я</div>
+                <span class="review-name">Яна</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">Лонгслив стал базой. Под всё подходит, качество отличное. Все спрашивают где брала.</div>
+            <div class="review-like">♥ 27</div>
+        </div>
+    </div>
+</div>
+
+<!--контакты и подвал-->
+<div id="contacts" class="footer-dark">
+    <div class="footer-dark-inner">
+        <div class="footer-dark-header">
+            <div class="footer-dark-title">CONTACTS</div>
+            <div class="footer-dark-line"></div>
+        </div>
+        <div class="footer-dark-grid">
+            <div class="footer-dark-info">
+                <div class="footer-dark-item">
+                    <div class="footer-dark-label">✧ EMAIL</div>
+                    <div class="footer-dark-value">hello@outofline.ru</div>
+                </div>
+                <div class="footer-dark-item">
+                    <div class="footer-dark-label">✧ TELEGRAM</div>
+                    <div class="footer-dark-value">@out_of_line</div>
+                </div>
+                <div class="footer-dark-item">
+                    <div class="footer-dark-label">✧ ADDRESS</div>
+                    <div class="footer-dark-value">Уфа, ул. Ленина, 42</div>
+                </div>
+            </div>
+            <div class="footer-dark-right">
+            </div>
+        </div>
+    </div>
+    <div class="footer-dark-bottom">
+        <div class="footer-dark-logo">Out of Line</div>
+        <div class="footer-dark-copy"> Out of Line© 2026 — Уфа</div>
+    </div>
+</div>
+</body>
+</html>
