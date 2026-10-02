@@ -435,16 +435,15 @@ body{
         text-overflow: clip;
     }
 
-    /* Товары — 2 колонки, аккуратные карточки */
+    /* Товары — 2 колонки через CSS Grid */
     .products-grid {
         margin: 20px 15px;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
     .product-card {
-        flex: 0 0 calc(50% - 5px);
-        max-width: calc(50% - 5px);
+        width: 100%;
         border-radius: 10px;
         overflow: hidden;
         background: #ffffff;
