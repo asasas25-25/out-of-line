@@ -366,10 +366,10 @@ body{
 /* Планшеты (до 1024px) */
 @media (max-width: 1024px) {
     .product-card {
-        width: calc(50% - 15px); /* 2 колонки */
+        width: calc(50% - 15px);
     }
     .review-card {
-        width: calc(50% - 15px); /* 2 колонки */
+        width: calc(50% - 15px);
     }
     .footer-dark-info {
         gap: 30px;
@@ -379,7 +379,7 @@ body{
 /* Телефоны (до 768px) */
 @media (max-width: 768px) {
     body {
-        padding-top: 130px; /* Меню становится выше */
+        padding-top: 130px;
     }
 
     /* Меню */
@@ -429,7 +429,7 @@ body{
         gap: 10px;
     }
     .product-card {
-        width: calc(50% - 5px); /* 2 колонки */
+        width: calc(50% - 5px);
         border-radius: 12px;
     }
     .product-img {
@@ -521,7 +521,7 @@ body{
         font-size: 22px;
     }
     .product-img {
-        height: 130px; /* Ещё меньше, чтобы точно влезало по 2 */
+        height: 130px;
     }
     .product-title {
         font-size: 11px;
