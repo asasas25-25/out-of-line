@@ -77,10 +77,13 @@ body{
 
 /* ===== ТОВАРЫ ===== */
 .products-grid{
-    margin:30px 35px;
+    max-width:1400px;
+    margin:30px auto;
+    padding:0 35px;
     display:flex;
     flex-wrap:wrap;
     gap:30px;
+    box-sizing:border-box;
 }
 
 .product-card{
@@ -214,21 +217,22 @@ body{
 }
 
 .reviews-grid{
+    max-width:1400px;
+    margin:0 auto;
     display:flex;
     flex-wrap:wrap;
     gap:24px;
 }
 
 .review-card{
-    position:relative;
     border:1px solid #ece5e0;
-    padding:22px 22px 18px;
-    width:calc(25% - 18px);
+    padding:26px 28px 22px;
+    width:calc(50% - 12px);
     background:#fdfcfb;
     border-radius:18px;
     display:flex;
     flex-direction:column;
-    gap:14px;
+    gap:16px;
     transition:transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     box-shadow:0 1px 2px rgba(0,0,0,0.02);
 }
@@ -242,58 +246,60 @@ body{
 .review-header{
     display:flex;
     align-items:center;
-    gap:12px;
-    position:relative;
+    gap:14px;
 }
 
 .review-avatar{
-    width:46px;
-    height:46px;
+    width:52px;
+    height:52px;
+    min-width:52px;
+    min-height:52px;
+    aspect-ratio:1 / 1;
     border-radius:50%;
     background:linear-gradient(135deg, #2c2c2c 0%, #4a3f39 100%);
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:18px;
+    font-size:20px;
     font-weight:600;
     color:white;
     flex-shrink:0;
+    flex-grow:0;
     letter-spacing:0.5px;
 }
 
 .review-meta{
     display:flex;
     flex-direction:column;
-    gap:2px;
+    gap:3px;
     flex:1;
     min-width:0;
 }
 
 .review-name{
     font-weight:600;
-    font-size:15px;
+    font-size:17px;
     color:#2c2c2c;
     line-height:1.2;
 }
 
 .review-date{
-    font-size:11px;
+    font-size:12px;
     color:#9a8d84;
     letter-spacing:0.3px;
 }
 
 .review-stars{
-    position:absolute;
-    top:0;
-    right:0;
-    font-size:12px;
+    font-size:15px;
     color:#c9a227;
-    letter-spacing:1px;
+    letter-spacing:2px;
+    margin-left:auto;
+    flex-shrink:0;
 }
 
 .review-text{
-    font-size:14px;
-    line-height:1.6;
+    font-size:15px;
+    line-height:1.65;
     color:#4a4a4a;
     flex:1;
     margin:0;
@@ -303,9 +309,9 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding-top:12px;
+    padding-top:14px;
     border-top:1px solid #f0e9e4;
-    font-size:12px;
+    font-size:13px;
     gap:8px;
     flex-wrap:wrap;
 }
@@ -318,7 +324,7 @@ body{
 
 .review-verified{
     color:#7a8b6f;
-    font-size:11px;
+    font-size:12px;
     letter-spacing:0.3px;
     white-space:nowrap;
 }
@@ -446,7 +452,7 @@ body{
         width: calc(50% - 15px);
     }
     .review-card {
-        width: calc(50% - 12px);
+        width: 100%;
     }
     .footer-dark-info {
         gap: 30px;
@@ -508,7 +514,9 @@ body{
 
     /* ===== ТОВАРЫ (мобильные) ===== */
     .products-grid {
-        margin: 20px 15px;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 15px;
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
@@ -580,26 +588,38 @@ body{
 
     /* ===== ОТЗЫВЫ (мобильные) ===== */
     .reviews-section {
-        margin: 40px 15px 0;
+        max-width: 100%;
+        margin: 40px auto 0;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
     .reviews-title {
         font-size: 26px;
     }
     .reviews-grid {
+        max-width: 100%;
         gap: 14px;
     }
     .review-card {
         width: 100%;
-        padding: 18px;
+        padding: 20px;
     }
     .review-avatar {
-        width: 42px;
-        height: 42px;
-        font-size: 16px;
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
+        font-size: 17px;
+    }
+    .review-name {
+        font-size: 15px;
     }
     .review-stars {
-        position: static;
-        margin-left: auto;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .review-text {
+        font-size: 14px;
     }
 
     /* ===== ФУТЕР (мобильные) ===== */
