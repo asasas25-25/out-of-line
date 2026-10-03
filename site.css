@@ -376,15 +376,31 @@ body{
 }
 
 @media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     body {
         padding-top: 130px;
-        overflow-x: hidden;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
     .top-bar {
         flex-direction: column;
         padding: 10px 15px;
         gap: 5px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .logo {
         font-size: 32px;
@@ -408,32 +424,39 @@ body{
     .hero-banner {
         margin-left: 15px;
         margin-right: 15px;
+        width: auto;
+        max-width: 100%;
     }
     .hero-image {
         height: 300px;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     .ready-title, .ready-title1 {
         margin: 30px 15px 0;
-        font-size: 26px;
-    }
-    .ready-title1 {
-        display: block;
-        white-space: nowrap;
+        font-size: 24px;
+        white-space: normal;
         overflow: hidden;
-        text-overflow: clip;
+        word-break: break-word;
+        max-width: calc(100% - 30px);
+        display: block;
     }
 
-    /* ТОВАРЫ: 2 колонки через CSS Grid */
     .products-grid {
         margin: 20px 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+        width: auto;
+        max-width: calc(100% - 30px);
         box-sizing: border-box;
     }
     .product-card {
         width: 100%;
+        max-width: 100%;
         border: 1px solid #d6d0cc;
         border-radius: 12px;
         background: #fff;
@@ -442,6 +465,7 @@ body{
     }
     .product-img {
         width: 100%;
+        max-width: 100%;
         height: 160px;
         background: #fff;
         padding: 6px;
@@ -480,6 +504,7 @@ body{
         margin: 5px 15px 0;
         gap: 20px;
         padding-top: 20px;
+        max-width: calc(100% - 30px);
     }
     .about-title {
         font-size: 26px;
@@ -490,6 +515,7 @@ body{
 
     .reviews-section {
         margin: 40px 15px 0;
+        max-width: calc(100% - 30px);
     }
     .reviews-title {
         font-size: 26px;
@@ -497,11 +523,14 @@ body{
     .review-card {
         width: 100%;
         padding: 15px;
+        box-sizing: border-box;
     }
 
     .footer-dark {
         padding: 30px 15px 20px;
         margin-top: 40px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .footer-dark-title {
         font-size: 26px;
@@ -540,7 +569,7 @@ body{
         height: 200px;
     }
     .ready-title, .ready-title1 {
-        font-size: 22px;
+        font-size: 20px;
     }
     .product-img {
         height: 140px;
